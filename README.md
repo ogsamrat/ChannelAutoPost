@@ -1,2 +1,3 @@
 # ChannelAutoPost
-A Channel Auto Post Userbot To Forward All New Posts Of A Channel To Another!
+A Channel Auto Post (User)Bot To Forward All New Posts Of A Channel To Another!
+# Releasing Soon :)
