@@ -1,7 +1,7 @@
 import os
 
 class Config(object):
-    USE_AS_USERBOT = bool(os.environ.get("USE_AS_USERBOT"))
+    USE_AS_USERBOT = bool(os.environ.get("USE_AS_USERBOT", False))
     APP_ID = int(os.environ.get("APP_ID"))
     APP_HASH = os.environ.get("APP_HASH")
     BOT_TOKEN = os.environ.get("BOT_TOKEN")
