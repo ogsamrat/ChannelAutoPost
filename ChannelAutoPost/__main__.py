@@ -23,7 +23,7 @@ async def help(event):
 
 
 if __name__ == "__main__":
-    ChannelAutoPost.start()
+    ChannelAutoPost.start(bot_token=Config.BOT_TOKEN)
     if len(argv) not in (1, 3, 4):
         ChannelAutoPost.disconnect()
     else:
