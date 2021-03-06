@@ -1,7 +1,7 @@
 import logging
 
 from telethon import events
-from ChannelAutoPost import Config
+from ChannelAutoPost import Config, ChannelAutoPost
 from telethon import events, Button
 from sys import argv
 from ChannelAutoPost.plugins import *
