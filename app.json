@@ -25,6 +25,7 @@
         },
         "USE_AS_USERBOT": {
             "description": "Leave it blank if you don't wanna use it as an userbot",
+            "required": false,            
             "value": ""
         },
         "FROM_CHANNEL": {
@@ -34,14 +35,17 @@
         },
         "TO_CHANNEL": {
             "description": "Channel ID (with -100) to where you want to forward new posts for other channels. Only one ID allowed",
+            "required": true,            
             "value": ""
         },
         "REMOVE_POST_CAPTION": {
             "description": "Leave it blank if you don't want captionless media posts from FROM_CHANNEL",
+            "required": false,            
             "value": ""
         },
         "CUSTOM_FOOTER": {
             "description": "Message that will be shown at last of all posts, you can use formatters like, **word** for old, __word__ for italics, ~~word~~ for strikethrough and --word-- for underlined text.... leave it blank if you dont want to enable it",
+            "required": false,            
             "value": ""
         }
     },
