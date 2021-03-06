@@ -19,9 +19,9 @@ async def autopost(event):
             else:
                 if Config.CUSTOM_FOOTER:
                     msg = str(event.text) + "\n\n" + str(Config.CUSTOM_FOOTER)
-                    await event.client.send_message(Config.TO_CHANNEL, msg)
+                    await event.client.send_message(Config.TO_CHANNEL, msg, link_preview=False)
                 else:                
-                    await event.client.send_message(Config.TO_CHANNEL, event.text)                    
+                    await event.client.send_message(Config.TO_CHANNEL, event.text, link_preview=False)                    
             await asyncio.sleep(2) # avoid flood waits    
         except Exception as oooo:
             print(f"Some error occured!\n\n{oooo}")
