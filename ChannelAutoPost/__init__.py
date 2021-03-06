@@ -4,7 +4,7 @@ from telethon.sync import TelegramClient as StringSessionMaker
 from telethon.sessions import StringSession
 
 
-if Config.USE_AS_USERBOT is None:
+if Config.USE_AS_USERBOT:
     if Config.BOT_TOKEN is None or Config.APP_ID is None or Config.APP_HASH is None:
         print("Important env variables missing... quitting!")   
         quit(1) 
