@@ -1,6 +1,7 @@
 import asyncio
 from telethon import events
 from .Config import Config
+from ChannelAutoPost import ChannelAutoPost
 
 
 @ChannelAutoPost.on(events.NewMessage(incoming=True, chats=Config.FROM_CHANNEL)) 
