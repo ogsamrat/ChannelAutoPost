@@ -30,7 +30,7 @@ async def help(event):
                       "> Remove all of the new media post caption as per user's choice"
                       "> Can be used as an userbot, therefore you just need to join the channels from where to leech and "
                       "need not to be admin in them, you just need to admin in the forwarding or `TO_CHANNEL` channel!"
-                      "\n\n**NOTE:** You have to add the bot in both the channels from where to forward and to where forward! [For bot instances and not userbots]"
+                      "\n\n**NOTE:** You have to add the bot in both the channels from where to forward and to where forward! (For bot instances and not userbots)"
                       "\n\nLiked the bot? Give the [repo](github.com/EmiliaDevs/ChannelAutoPost) a star! With ❤️ by @GodDrick",
                       link_preview=False,
                      )
