@@ -22,7 +22,7 @@ async def autopost(event):
                     msg = str(event.text) + "\n\n" + str(Config.CUSTOM_FOOTER)
                     await event.client.send_message(Config.TO_CHANNEL, msg, link_preview=False)
                 else:                
-                    await event.client.send_message(Config.TO_CHANNEL, event.text, link_preview=False)                    
+                    await event.client.send_message(Config.TO_CHANNEL, event.message, link_preview=False)                    
             await asyncio.sleep(5) # avoid flood waits    
         except Exception as oooo:
             with suppress(Exception):
