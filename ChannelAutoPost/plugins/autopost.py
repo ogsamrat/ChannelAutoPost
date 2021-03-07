@@ -1,4 +1,5 @@
 import asyncio
+from contextlib import suppress
 from telethon import events
 from ChannelAutoPost import Config, ChannelAutoPost
 
@@ -22,6 +23,8 @@ async def autopost(event):
                     await event.client.send_message(Config.TO_CHANNEL, msg, link_preview=False)
                 else:                
                     await event.client.send_message(Config.TO_CHANNEL, event.text, link_preview=False)                    
-            await asyncio.sleep(2) # avoid flood waits    
+            await asyncio.sleep(5) # avoid flood waits    
         except Exception as oooo:
-            print(f"Some error occured!\n\n{oooo}")
+            with suppress(Exception):
+                await event.client.send_message(Config.OWNER_ID, f"An error occured while forwarding message to `{Config.TO_CHANNEL}`:\n\nError:\n`{oooo.__class__.__name__}: {oooo}`")
+            print("An error occured, check your PM to get error traceback!")
