@@ -26,8 +26,8 @@ async def start(event):
 async def help(event):
     await event.reply("These are the things I can do,\n\n"
                       "> Forward posts of one or more channels to provided channel!\n"
-                      "> Add custom footer at last of all vew posts\n"
-                      "> Remove all of the new media post caption as per user's choice"
+                      "> Add custom footer at last of all new posts\n"
+                      "> Remove all of the new media post caption as per user's choice\n"
                       "> Can be used as an userbot, therefore you just need to join the channels from where to leech and "
                       "need not to be admin in them, you just need to admin in the forwarding or `TO_CHANNEL` channel!"
                       "\n\n**NOTE:** You have to add the bot in both the channels from where to forward and to where forward! (For bot instances and not userbots)"
