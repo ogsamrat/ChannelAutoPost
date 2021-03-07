@@ -23,6 +23,11 @@
             "required": true,
             "value": ""
         },
+        "OWNER_ID": {
+            "description": "Your ID, to receive notifications",
+            "required": true,
+            "value": ""
+        },        
         "USE_AS_USERBOT": {
             "description": "Leave it blank if you don't wanna use it as an userbot",
             "required": false,            
