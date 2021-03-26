@@ -1,10 +1,10 @@
 import asyncio
 from contextlib import suppress
 from telethon import events
-from ChannelAutoPost import Config, ChannelAutoPost
+from ChannelAutoPost import *
 
 
-@ChannelAutoPost.on(events.NewMessage(incoming=True, chats=Config.FROM_CHANNEL)) 
+@channel_poster.on(events.NewMessage(incoming=True, chats=Config.FROM_CHANNEL)) 
 async def autopost(event): 
     if not event.is_private:
         try:
