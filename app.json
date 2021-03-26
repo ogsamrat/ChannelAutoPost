@@ -23,6 +23,11 @@
             "required": true,
             "value": ""
         },
+        "SESSION": {
+            "description": "String session of the account that you want to use as auto poster! Get it from https://replit.com/@SupOK/StringSession#main.py ... Leave it blank if you donot wish to use it as userbot.",
+            "required": false,
+            "value": ""
+        },        
         "OWNER_ID": {
             "description": "Your ID, to receive notifications",
             "required": true,
