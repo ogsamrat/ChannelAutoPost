@@ -22,7 +22,7 @@ virtualenv -p /usr/bin/python3 venv
 . ./venv/bin/activate
 pip install -r requirements.txt
 # <Create Config.py with variables as given below>
-python3 -m telebot
+python3 -m ChannelAutoPost
 ```
 
 An example `Config.py` file could be:
@@ -61,7 +61,7 @@ Simply just leave the Config as it is.
 - 
 </details>
 
-## Disclaimer
+## Disclaimer:
 ```
     	Improper use may lead to ban.
     	I am not responsible if you misuse this bot.
