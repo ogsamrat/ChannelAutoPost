@@ -12,4 +12,4 @@ else:
     if Config.SESSION is None or Config.APP_ID is None or Config.APP_HASH is None:
         print("Important env variables missing... quitting!")   
         quit(1)     
-    ChannelAutoPost = TelegramClient(Config.SESSION, Config.APP_ID, Config.APP_HASH)
+    ChannelAutoPost = TelegramClient(StringSession(Config.SESSION), Config.APP_ID, Config.APP_HASH)
