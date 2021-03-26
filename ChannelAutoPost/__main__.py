@@ -39,7 +39,7 @@ async def help(event):
 
 @ChannelAutoPostUB.on(events.NewMessage(pattern="^.alive$", outgoing=True))
 async def alive_ub(event):
-    await event.reply("Sup? I am alive :)")
+    await event.edit("Sup? I am alive :)")
     
     
 @ChannelAutoPost.on(events.NewMessage(pattern="^/alive$", func=lambda e: e.is_private, from_users=Config.OWNER_ID))
@@ -55,7 +55,7 @@ if __name__ == "__main__":
         if not Config.SESSION:
             log.error("SESSION is missing... Bot is quitting. Kindly fill all the required vars to get it started!")
             quit(1)
-        ChannelAutoPost.start()        
+        ChannelAutoPostUB.start()        
     if len(argv) not in (1, 3, 4):
         ChannelAutoPost.disconnect()
     else:
